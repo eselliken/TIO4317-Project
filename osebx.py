@@ -7,8 +7,9 @@ ticker = "OSEBX.OL"
 # Fetch data (last 10 years)
 osebx = yf.download(ticker, start="2015-03-01", end="2025-03-01", interval="1d")
 
-# Save to CSV
-osebx.to_csv("osebx_prices.csv")
+# Save to CSV with ";" as the delimiter
+osebx.to_csv("osebx_prices.csv", sep=";")
 
 # Show the first rows
 print(osebx.head())
+
