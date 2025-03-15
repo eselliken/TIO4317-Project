@@ -12,4 +12,3 @@ osebx.to_csv("osebx_prices.csv", sep=";")
 
 # Show the first rows
 print(osebx.head())
-
